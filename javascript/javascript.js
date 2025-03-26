@@ -18,7 +18,7 @@ function createDeleteButton(){
 
 function createList(){
     let showItem = document.createElement("li");
-    showItem.style.marginBottom = "10px";
+    showItem.classList.toggle("list");
     showItem.textContent = storeItem(item);
     show.appendChild(showItem);
     return showItem;
@@ -34,6 +34,8 @@ btn.addEventListener("click", () => {
     deleteButton.addEventListener("click", () => {
         showItem.remove();
     });
+
+    item.focus();
 
 
 });
