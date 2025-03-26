@@ -3,7 +3,7 @@ let item = document.querySelector("input");
 let show = document.querySelector("ul");
 
 function storeItem(){
-    itemInput = item.value;
+    let itemInput = item.value;
     item.value = "";
 
     return itemInput;
